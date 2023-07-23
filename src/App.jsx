@@ -10,10 +10,10 @@ const App = () => {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/pokemones" element={<Pokemones />} />
-        <Route path="/pokemones/:name" element={<Pokemon />} />
-        <Route path="*" element={<Page404 />} />
+        <Route path='/' element={<Home />} />
+        <Route path='/pokemones' element={<Pokemones />} />
+        <Route path='/pokemones/:name' element={<Pokemon />} />
+        <Route path='*' element={<Page404 />} />
       </Routes>
     </Router>
   );

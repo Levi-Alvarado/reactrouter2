@@ -26,23 +26,23 @@ const Pokemones = () => {
   );
 
   return (
-    <div className="pokemones-container">
+    <div className='pokemones-container'>
       <h1>Selecciona un Pokémon</h1>
-      <div className="search-container">
+      <div className='search-container'>
         <input
-          type="text"
-          placeholder="Buscar por nombre..."
+          type='text'
+          placeholder='Buscar por nombre...'
           value={searchTerm}
           onChange={handleSearch}
-          list="pokemones-list"
+          list='pokemones-list'
         />
-        <datalist id="pokemones-list">
+        <datalist id='pokemones-list'>
           {filteredPokemones.map(pokemon => (
             <option key={pokemon.name} value={pokemon.name} />
           ))}
         </datalist>
       </div>
-      <button className="btn btn-danger" onClick={() => irAPokemon(searchTerm)}>Ver detalles</button> {/* Botón "Ver detalles" */}
+      <button className='btn btn-danger' onClick={() => irAPokemon(searchTerm)}>Ver detalles</button>
     </div>
   );
 }
