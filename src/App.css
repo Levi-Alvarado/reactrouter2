@@ -1,0 +1,37 @@
+
+
+.container {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.image-container {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+#navbar a.active {
+  font-weight: 500;
+  color: #f1f1f1;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: #f1f1f1bb;
+}
